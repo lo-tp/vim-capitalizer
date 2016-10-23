@@ -12,5 +12,7 @@ let prepositions =["a","an","amid","apud","as","at","atop","but","by","chez","do
     endif
     normal gvd
     echom @@
+    let words=split(@@)
+    echom len(words)
     let @@=old
 endfunction
