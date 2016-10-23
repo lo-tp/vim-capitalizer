@@ -15,6 +15,8 @@ function! GrepOperator(type)
     let s:words=split(@@)
     for s:word in s:words
         echom s:word
+        let s:letters=split(s:word,'\zs')
+        echom s:letters[0]
     endfor
     echom len(s:words)
     let @@=s:old
