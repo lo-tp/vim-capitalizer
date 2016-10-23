@@ -1,0 +1,9 @@
+prepositions =['a','an','amid','apud','as','at','atop','but','by',
+'chez','down','for','from','in','into','less','near','of','off','on',
+'onto','out','over','past','per','pre','pro','qua','than','to','up',
+'upon','via','with',]
+
+articles=['the','some','a','an']
+
+coordinatingConjunctions=['for','and','nor','but','or','yet','so']
+
