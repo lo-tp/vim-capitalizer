@@ -23,6 +23,9 @@ function! GrepOperator(type)
         let l:words[l:index]=l:word
         let l:index+=1
     endfor
+    let l:lastIndex=len(l:words)-1
+    let l:words[0]=s:Capitalize(l:words[0])
+    let l:words[l:lastIndex]=s:Capitalize(l:words[l:lastIndex])
     let @x=join(l:words,' ')
     normal gvd
     normal "xp
