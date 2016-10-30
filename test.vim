@@ -1,6 +1,6 @@
 " todo: Capitalize the first and the last word
 "
-vnoremap ;s :<c-u>call GrepOperator(visualmode())<cr>
+vnoremap ;s :<c-u>call SentenceCapitalizer(visualmode())<cr>
 
 
 function! s:Capitalize(word)
@@ -9,7 +9,7 @@ function! s:Capitalize(word)
     return join(l:letters,'')
 endfunction
 
-function! GrepOperator(type)
+function! SentenceCapitalizer(type)
     let l:prepositions =["a","an","amid","apud","as","at","atop","but","by","chez","down","for","from","in","into","less","near","of","off","on","onto","out","over","past","per","pre","pro","qua","than","to","up","upon","via","with",'the','some','a','an','for','and','nor','but','or','yet','so']
     let l:old = @x
     normal gv"xy
