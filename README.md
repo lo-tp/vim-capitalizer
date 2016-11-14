@@ -10,7 +10,7 @@ Let's assume you are using [Vundle][vundle], if you are using other package mana
 Add this line to your `.vimrc`
 
 
-    Plugin 'SirVer/ultisnips'
+    Plugin 'lo-tp/vim-capitalizer'
 
 Restart your vim and run `:PluginInstall `.
 
